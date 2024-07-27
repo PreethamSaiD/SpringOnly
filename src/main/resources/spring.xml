@@ -9,6 +9,10 @@
 
 
     </bean>
+    <bean id="machine" class="org.example.Machine">
+
+
+    </bean>
 
 </beans>
 

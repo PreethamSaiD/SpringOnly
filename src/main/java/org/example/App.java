@@ -12,7 +12,7 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context=new ClassPathXmlApplicationContext("spring.xml");
-//        Dev obj= (Dev) context.getBean("dev");
-//        obj.code();
+        Dev obj= (Dev) context.getBean("dev");//this is just referring to the object from the IOC container.
+        System.out.println(obj.getDevAge());
     }
 }

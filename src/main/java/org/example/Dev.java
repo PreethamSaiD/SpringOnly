@@ -2,21 +2,21 @@ package org.example;
 
 
 public class Dev {
-    int devAge;
-
-    public int getDevAge() {
-        return devAge;
-    }
-
-    public void setDevAge(int devAge) {
-        this.devAge = devAge;
-    }
-
+    MegaMachine mc;
     Dev(){
         System.out.println("We are in the DEV class currently");
     }
     public void code() {
         System.out.println("This is a new project to learn Spring boot");
+        mc.machineCode();
+
     }
 
+    public MegaMachine getMc() {
+        return mc;
+    }
+
+    public void setMc(MegaMachine mc) {
+        this.mc = mc;
+    }
 }

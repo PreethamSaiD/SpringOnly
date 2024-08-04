@@ -5,13 +5,11 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="dev" class="org.example.Dev">
-    <property name="devAge" value="23"/>
-
+    <bean id="dev" class="org.example.Dev" autowire="byType">
+    </bean>
+    <bean id="aeroplane" class="org.example.Aeroplane" primary="true">
     </bean>
     <bean id="machine" class="org.example.Machine">
-
-
     </bean>
 
 </beans>
